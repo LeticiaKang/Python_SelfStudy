@@ -1,12 +1,11 @@
 # AdX : A개의 X면체 주사위
 
 # 1. 슬랙봇 API 토큰 얻기
-# 토큰 : xoxb-4013899084772-4013917706788-hkESRPYqjnG7djjK1wC5iHL3
+# 토큰 : xoxb-4027440923633-4039540055472-tvdrtP1ngE3nJ4COwOWs0FBI
 
 from slackbot.bot import respond_to
 from slackbot.bot import listen_to
 from slackbot.dispatcher import Message
-
 import re 
 # re : 정규 표현식 패키지
 
