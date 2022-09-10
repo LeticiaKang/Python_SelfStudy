@@ -33,7 +33,7 @@ for item in book_list:
 # 출력
 print(book_list)  
 
-<csv를 db에 넣기 : executemany>
+#<csv를 db에 넣기 : executemany>
 cur.executemany("insert into hanbit_books values (?, ?, ?, ?, ?)", book_list)
 con.commit()
 
