@@ -1,19 +1,19 @@
-# -*- coding: utf-8 -*-
-
 from flask import Flask  # 플라스크를 임포트
 from flask import request  # 플라스크에서 request 객체를 사용
-import json # JSON 라이브러리를 임포트합니다.
+import json 
 import sqlite3
 
-# 플라스크 앱을 생성합니다.
+# 플라스크 앱을 생성
 app = Flask(__name__)
 
-# 데이터베이스에 연결하는 함수를 정의합니다.
+# 데이터베이스에 연결하는 함수
 def get_db_con() -> sqlite3.connect:
-    return sqlite3.connect("db.sqlite")
+    return sqlite3.connect("books_db.sqlite")
 
 # URL 경로에 따라 실행할 함수에 디코레이터를 사용합니다. 디코레이터의 파라미터는 URL 경로입니다.
 @app.route("/")
+
+
 #========= 모든 데이터를 내려받기 위한 hello() 함수를 정의 =========
 def hello():
     # con이라는 변수를 생성해 데이터베이스에 접속합니다.
@@ -27,6 +27,8 @@ def hello():
 
 # 저자 이름 요청을 받을 url을 정해줍니다.
 @app.route("/books/by/author")
+
+
 #======== 해당 url을 받아서 저자 이름을 가져올 함수를 선언 ========
 def get_books_by_author():
     # 파라미터에서 name을 받아옵니다.
@@ -40,7 +42,7 @@ def get_books_by_author():
         result = cur.execute(q, param)
     result_json = jsonize(result)
     return result_json
-#
+
 # 출간월 요청을 받을 url을 정해줍니다.
 @app.route("/books/by/month")
 # ========해당 url을 받아서 출간월을 가져올 함수를 선언 =========
