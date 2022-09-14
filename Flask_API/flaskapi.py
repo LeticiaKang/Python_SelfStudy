@@ -6,7 +6,7 @@ import sqlite3
 app = Flask(__name__)  # 플라스크 앱을 생성
 
 # 데이터베이스에 연결하는 함수
-def get_db_con() -> sqlite3.connect:
+def get_db_con() 
     return sqlite3.connect("books_db.sqlite")
 
 #========= 모든 데이터를 내려받기 위한 hello() 함수를 정의 =========
