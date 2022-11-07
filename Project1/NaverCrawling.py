@@ -9,12 +9,13 @@ from selenium import webdriver
 from bs4 import BeautifulSoup as bs
 import pyperclip
 import time
-import QT as ui
+from QT import WindowClass
 
-# options = webdriver.ChromeOptions()
-# options.add_experimental_option('excludeSwitches', ['enable-logging'])
-# driver = webdriver.Chrome(options=options)
-driver = webdriver.Chrome()
+options = webdriver.ChromeOptions()
+options.add_experimental_option('excludeSwitches', ['enable-logging']) # usb에러
+# options.add_argument("headless") # 브라우저 없이 실행
+driver = webdriver.Chrome(options=options, executable_path=r"C:\Self_Study\PythonStudy\Project1\chromedriver")
+# driver = webdriver.Chrome(r"C:\Self_Study\PythonStudy\Project1\chromedriver")
 
 # 페이지 이동
 def move(url):
@@ -69,7 +70,8 @@ login_url = "https://nid.naver.com/nidlogin.login"
 move(login_url)
 # 1-2. 아이디와 비밀번호 입력하기
 # id = ui.WindowClass.id
-login(); time.sleep(5)
+print(WindowClass.ID())
+login('dmswjd_14', '1q2w3e1004!'); time.sleep(5)
 # 2. 뉴스 크롤링하기
 hankuk_url = 'https://media.naver.com/press/015?sid=101'
 move(hankuk_url) # 한국경제 뉴스버튼을 클릭하면 페이지로 이동함

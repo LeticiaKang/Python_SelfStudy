@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>742</width>
-    <height>506</height>
+    <height>527</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -77,6 +77,12 @@
      <property name="text">
       <string/>
      </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>Enter Password</string>
+     </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_ID">
      <property name="geometry">
@@ -86,6 +92,9 @@
        <width>171</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Enter ID</string>
      </property>
     </widget>
    </widget>
@@ -143,6 +152,33 @@
       <height>331</height>
      </size>
     </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="verticalScrollMode">
+     <enum>QAbstractItemView::ScrollPerItem</enum>
+    </property>
+    <property name="horizontalScrollMode">
+     <enum>QAbstractItemView::ScrollPerItem</enum>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::SolidLine</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>330</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>37</number>
+    </attribute>
     <row>
      <property name="text">
       <string>1</string>
