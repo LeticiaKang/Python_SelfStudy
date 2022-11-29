@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QGroupBox" name="loginBox">
+   <widget class="QGroupBox" name="BoxLogin">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -26,7 +26,7 @@
     <property name="title">
      <string/>
     </property>
-    <widget class="QLabel" name="ID">
+    <widget class="QLabel" name="TextId">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -39,7 +39,7 @@
       <string>아이디</string>
      </property>
     </widget>
-    <widget class="QLabel" name="PWD">
+    <widget class="QLabel" name="TextPwd">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -52,7 +52,7 @@
       <string>비밀번호</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="btn_login">
+    <widget class="QPushButton" name="PushButtonLogin">
      <property name="geometry">
       <rect>
        <x>300</x>
@@ -81,7 +81,7 @@
       <enum>QLineEdit::Password</enum>
      </property>
      <property name="placeholderText">
-      <string>Enter Password</string>
+      <string>비밀번호</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_ID">
@@ -94,50 +94,11 @@
       </rect>
      </property>
      <property name="placeholderText">
-      <string>Enter ID</string>
+      <string>아이디</string>
      </property>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="SearchBox_2">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>30</y>
-      <width>311</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string/>
-    </property>
-    <widget class="QPushButton" name="btn_hankuk">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>141</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>한국경제 뉴스</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn_meil">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>10</y>
-       <width>141</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>매일경제 뉴스</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QTableWidget" name="tableWidget_contents">
+   <widget class="QTableWidget" name="TableWidgetCrawling">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -235,7 +196,7 @@
      </property>
     </column>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="TextCrawling">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -247,6 +208,70 @@
     <property name="text">
      <string>크롤링 내용</string>
     </property>
+   </widget>
+   <widget class="QGroupBox" name="BoxSite">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>10</y>
+      <width>331</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="TextSite">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>231</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>사이트 url을 입력하세요!</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="PushButtonSite">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>10</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>이동</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_SITE">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>311</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="maxLength">
+      <number>32765</number>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Normal</enum>
+     </property>
+     <property name="placeholderText">
+      <string>사이트 주소</string>
+     </property>
+     <property name="cursorMoveStyle">
+      <enum>Qt::LogicalMoveStyle</enum>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>

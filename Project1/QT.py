@@ -10,10 +10,11 @@
 #1) 라이브러리 import
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
-from PyQt5 import QtWidgets
 import sys
 import os
+
 from ConfigManager import ConfigClass
+from NaverCrawling import news_crawling,login
 
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
@@ -24,58 +25,90 @@ def resource_path(relative_path):
 form = resource_path("NaverCrawling.ui")
 form_class = uic.loadUiType(form)[0]
 
+
 #3) 화면을 띄우는 클래스 선언
 class WindowClass(QMainWindow, form_class) :
 
-    def ID(self):
-        return id
+    _config = ConfigClass()
 
     def __init__(self) :
         super().__init__()
         self.setupUi(self)
         self._config = ConfigClass()
 
-        # self.lineEdit_ID.setPlaceholderText("Enter ID Here")
-        # # 비밀번호 asterick
-        # self.lineEdit_PWD.setPlaceholderText("Enter Password Here")
-        # self.lineEdit_PWD.setEchoMode(QtWidgets.QLineEdit.Password)
-
     # 버튼 이벤트
-        self.btn_login.clicked.connect(self.button2Function)
-        self.btn_hankuk.clicked.connect(self.button1Function)
-        self.btn_meil.clicked.connect(self.button1Function)
+        self.PushButtonLogin.clicked.connect(self.ButtonEventLogin)
+        self.PushButtonSite.clicked.connect(self.ButtonEventSite)
 
-    # LineEdit과 관련된 버튼에 기능 연결
-        id = self.self.lineEdit_ID.text()
-        pwd = self.self.lineEdit_PWD.text()
+    def loadConfig(self):
+        try:
+            config_site = self._config.GetConfigData(self._config.section_main, self._config.key_site)
+            config_id = self._config.GetConfigData(self._config.section_main, self._config.key_id)
+            config_pw = self._config.GetConfigData(self._config.section_main, self._config.key_pw)
 
-    # TableWidget에 크롤링 내용 연동하기
-        import NaverCrawling as crawler
-        for row,title,url in zip(range(10), crawler.title_list, crawler.url_list):
-            self.tableWidget_contents.setItem(row, 0, QTableWidgetItem(title))
-            self.tableWidget_contents.setItem(row, 1, QTableWidgetItem(url))
+            self.lineEdit_SITE.setText(config_site)
+            self.lineEdit_ID.setText(config_id)
+            self.lineEdit_PWD.setText(config_pw)
+
+            print(config_site, config_id, config_pw)
+        except Exception as e:
+            print(e)
 
     # btn_1이 눌리면 작동할 함수
-    def button1Function(self):
-        print("btn Clicked")
-
-    # btn_2가 눌리면 작동할 함수
-    def button2Function(self):
-        print("btn Clicked")
+    def ButtonEventLogin(self):
+        print("로그인 버튼을 클릭했습니다.")
         print(self.lineEdit_ID.text())  # Lineedit에 있는 글자를 가져오는 메서드
         print(self.lineEdit_PWD.text())
+        login(self.lineEdit_ID.text(), self.lineEdit_PWD.text())
+
+        try:
+            # site = self.lineEdit_SITE.text()
+            id_text = self.lineEdit_ID.text()
+            pw = self.lineEdit_PWD.text()
+            msg_info = "id = {0},  pw = {1}".format(id_text, pw)
+            QMessageBox.about(self, "message", msg_info)
+
+            # self._config.SaveConfig(self._config.section_main, self._config.key_site, site)
+            self._config.SaveConfig(self._config.section_main, self._config.key_id, id_text)
+            self._config.SaveConfig(self._config.section_main, self._config.key_pw, pw)
+
+            self._config.WriteConfig()
+        except Exception as e:
+            print(e)
+
+    # btn_2가 눌리면 작동할 함수
+    def ButtonEventSite(self):
+        print('사이트를 입력했습니다.')
+        print(self.lineEdit_SITE.text())
+        try:
+            site = self.lineEdit_SITE.text()
+
+            msg_info = "site = {0}".format(site)
+            QMessageBox.about(self, "message", msg_info)
+
+            self._config.SaveConfig(self._config.section_main, self._config.key_site, site)
+
+            self._config.WriteConfig()
+        except Exception as e:
+            print(e)
+
+        url_list, title_list = news_crawling(self.lineEdit_SITE.text())
+        print(url_list)
+        crawl_cnt = len(url_list)
+        for i in range(crawl_cnt):
+            self.TableWidgetCrawling.setItem(i, 0, QTableWidgetItem(title_list[i]))
+            self.TableWidgetCrawling.setItem(i, 1, QTableWidgetItem(url_list[i]))
+            print("완료~")
 
 
-#4) 위에서 선언한 클래스를 실행 : QMainWindow 부모 클래스의 show 함수 실행
+# 4) 위에서 선언한 클래스를 실행 : QMainWindow 부모 클래스의 show 함수 실행
 if __name__ == '__main__':
+
     # QApplication : 프로그램을 실행시켜주는 클래스
     app = QApplication(sys.argv)
 
     # WindowClass의 인스턴스 생성
     myWindow = WindowClass()
-    # pw = QtGui.QLineEdit()
-    # pw.setEchoMode(QtGui.QLineEdit.Password)
-    # pw.show()
 
     # 프로그램 화면을 보여주는 코드
     myWindow.show()
