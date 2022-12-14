@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/텍스트_머신러닝_Test/Mecab-ko-for-Google-Colab" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/텍스트_머신러닝_Test/ReadyToUseAI" vcs="Git" />
   </component>
 </project>
