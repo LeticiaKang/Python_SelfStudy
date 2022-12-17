@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>mel-gold-tone-metal-packshot-artistique-vue1-as3751b09864nl302-9516414664734.jpg</filename>
+	<path>/my-project-name/mel-gold-tone-metal-packshot-artistique-vue1-as3751b09864nl302-9516414664734.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>150</width>
+		<height>175</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>71</xmin>
+			<ymin>88</ymin>
+			<xmax>90</xmax>
+			<ymax>104</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>28</xmin>
+			<ymin>50</ymin>
+			<xmax>123</xmax>
+			<ymax>107</ymax>
+		</bndbox>
+	</object>
+</annotation>

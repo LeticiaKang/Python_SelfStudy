@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>kin-gold-tone-metal-packshot-artistique-vue2-a37586b09384nk293-8857815384094.jpg</filename>
+	<path>/my-project-name/kin-gold-tone-metal-packshot-artistique-vue2-a37586b09384nk293-8857815384094.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>428</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>122</xmin>
+			<ymin>175</ymin>
+			<xmax>230</xmax>
+			<ymax>246</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>91</xmin>
+			<ymin>125</ymin>
+			<xmax>368</xmax>
+			<ymax>335</ymax>
+		</bndbox>
+	</object>
+</annotation>

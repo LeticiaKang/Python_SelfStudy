@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>3438f9345545bb2a7d6122369d27de53.jpg</filename>
+	<path>/my-project-name/3438f9345545bb2a7d6122369d27de53.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>634</width>
+		<height>1065</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>232</xmin>
+			<ymin>537</ymin>
+			<xmax>255</xmax>
+			<ymax>556</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>193</xmin>
+			<ymin>486</ymin>
+			<xmax>325</xmax>
+			<ymax>589</ymax>
+		</bndbox>
+	</object>
+</annotation>

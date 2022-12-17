@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>0460ad00f1f02d505c93ebf43fe21b14--chanel-classic-flap-chanel-jumbo.jpg</filename>
+	<path>/my-project-name/0460ad00f1f02d505c93ebf43fe21b14--chanel-classic-flap-chanel-jumbo.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>504</width>
+		<height>750</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>55</xmin>
+			<ymin>546</ymin>
+			<xmax>305</xmax>
+			<ymax>724</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>140</xmin>
+			<ymin>649</ymin>
+			<xmax>193</xmax>
+			<ymax>675</ymax>
+		</bndbox>
+	</object>
+</annotation>

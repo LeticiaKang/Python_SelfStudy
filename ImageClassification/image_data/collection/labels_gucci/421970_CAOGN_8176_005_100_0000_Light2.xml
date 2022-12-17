@@ -1,0 +1,38 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>421970_CAOGN_8176_005_100_0000_Light2.jpg</filename>
+	<path>/my-project-name/421970_CAOGN_8176_005_100_0000_Light2.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>316</width>
+		<height>395</height>
+		<depth>3</depth>
+	</size>
+
+	<object>
+		<name>Gucci</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>124</xmin>
+			<ymin>186</ymin>
+			<xmax>141</xmax>
+			<ymax>203</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Gucci</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>110</xmin>
+			<ymin>170</ymin>
+			<xmax>166</xmax>
+			<ymax>216</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,38 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>446744_UM8AN_2754_005_100_0000_Light.jpg</filename>
+	<path>/my-project-name/446744_UM8AN_2754_005_100_0000_Light.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>316</width>
+		<height>395</height>
+		<depth>3</depth>
+	</size>
+
+	<object>
+		<name>Gucci</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>136</xmin>
+			<ymin>119</ymin>
+			<xmax>200</xmax>
+			<ymax>163</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Gucci</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>159</xmin>
+			<ymin>131</ymin>
+			<xmax>177</xmax>
+			<ymax>145</ymax>
+		</bndbox>
+	</object>
+</annotation>

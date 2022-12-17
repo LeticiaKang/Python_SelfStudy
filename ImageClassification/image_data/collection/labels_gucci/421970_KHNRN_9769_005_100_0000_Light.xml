@@ -1,0 +1,38 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>421970_KHNRN_9769_005_100_0000_Light.jpg</filename>
+	<path>/my-project-name/421970_KHNRN_9769_005_100_0000_Light.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>632</width>
+		<height>790</height>
+		<depth>3</depth>
+	</size>
+
+	<object>
+		<name>Gucci</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>273</xmin>
+			<ymin>401</ymin>
+			<xmax>314</xmax>
+			<ymax>438</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Gucci</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>246</xmin>
+			<ymin>376</ymin>
+			<xmax>347</xmax>
+			<ymax>453</ymax>
+		</bndbox>
+	</object>
+</annotation>

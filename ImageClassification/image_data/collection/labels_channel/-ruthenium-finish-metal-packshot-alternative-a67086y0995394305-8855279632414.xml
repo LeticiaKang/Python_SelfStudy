@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>-ruthenium-finish-metal-packshot-alternative-a67086y0995394305-8855279632414.jpg</filename>
+	<path>/my-project-name/-ruthenium-finish-metal-packshot-alternative-a67086y0995394305-8855279632414.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>228</width>
+		<height>228</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>27</xmin>
+			<ymin>56</ymin>
+			<xmax>206</xmax>
+			<ymax>167</ymax>
+		</bndbox>
+	</object>
+</annotation>

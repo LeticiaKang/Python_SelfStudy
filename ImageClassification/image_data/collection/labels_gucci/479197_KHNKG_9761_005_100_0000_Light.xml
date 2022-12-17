@@ -1,0 +1,38 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>479197_KHNKG_9761_005_100_0000_Light.jpg</filename>
+	<path>/my-project-name/479197_KHNKG_9761_005_100_0000_Light.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>316</width>
+		<height>395</height>
+		<depth>3</depth>
+	</size>
+
+	<object>
+		<name>Gucci</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>127</xmin>
+			<ymin>106</ymin>
+			<xmax>204</xmax>
+			<ymax>168</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Gucci</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>168</xmin>
+			<ymin>139</ymin>
+			<xmax>198</xmax>
+			<ymax>160</ymax>
+		</bndbox>
+	</object>
+</annotation>

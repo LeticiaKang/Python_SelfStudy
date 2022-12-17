@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>rls-gold-tone-metal-packshot-artistique-vue1-as3528b09660nk034-8857845792798.jpg</filename>
+	<path>/my-project-name/rls-gold-tone-metal-packshot-artistique-vue1-as3528b09660nk034-8857845792798.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>150</width>
+		<height>175</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>43</xmin>
+			<ymin>48</ymin>
+			<xmax>109</xmax>
+			<ymax>131</ymax>
+		</bndbox>
+	</object>
+</annotation>

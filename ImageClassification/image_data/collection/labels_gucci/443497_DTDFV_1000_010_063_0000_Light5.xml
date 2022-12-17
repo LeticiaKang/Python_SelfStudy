@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>443497_DTDFV_1000_010_063_0000_Light5.jpg</filename>
+	<path>/my-project-name/443497_DTDFV_1000_010_063_0000_Light5.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>540</width>
+		<height>540</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Gucci</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>196</xmin>
+			<ymin>286</ymin>
+			<xmax>388</xmax>
+			<ymax>524</ymax>
+		</bndbox>
+	</object>
+</annotation>

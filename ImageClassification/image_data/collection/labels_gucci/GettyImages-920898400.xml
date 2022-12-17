@@ -1,0 +1,39 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>GettyImages-920898400.jpg</filename>
+	<path>/my-project-name/GettyImages-920898400.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>4440</width>
+		<height>2960</height>
+		<depth>3</depth>
+	</size>
+
+
+	<object>
+		<name>Gucci</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2198</xmin>
+			<ymin>965</ymin>
+			<xmax>3120</xmax>
+			<ymax>1748</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Gucci</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1894</xmin>
+			<ymin>544</ymin>
+			<xmax>3446</xmax>
+			<ymax>2097</ymax>
+		</bndbox>
+	</object>
+</annotation>

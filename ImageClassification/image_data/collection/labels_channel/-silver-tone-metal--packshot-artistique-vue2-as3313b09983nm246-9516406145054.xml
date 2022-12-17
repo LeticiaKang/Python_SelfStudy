@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>-silver-tone-metal--packshot-artistique-vue2-as3313b09983nm246-9516406145054.jpg</filename>
+	<path>/my-project-name/-silver-tone-metal--packshot-artistique-vue2-as3313b09983nm246-9516406145054.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>228</width>
+		<height>266</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>65</xmin>
+			<ymin>22</ymin>
+			<xmax>205</xmax>
+			<ymax>220</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>127</xmin>
+			<ymin>175</ymin>
+			<xmax>184</xmax>
+			<ymax>196</ymax>
+		</bndbox>
+	</object>
+</annotation>

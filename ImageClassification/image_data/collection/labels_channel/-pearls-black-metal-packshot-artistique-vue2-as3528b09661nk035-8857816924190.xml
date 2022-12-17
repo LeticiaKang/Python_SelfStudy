@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>-pearls-black-metal-packshot-artistique-vue2-as3528b09661nk035-8857816924190.jpg</filename>
+	<path>/my-project-name/-pearls-black-metal-packshot-artistique-vue2-as3528b09661nk035-8857816924190.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>228</width>
+		<height>266</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>53</xmin>
+			<ymin>19</ymin>
+			<xmax>165</xmax>
+			<ymax>171</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>400249_CAOGX_8990_003_073_0000_Light2.jpg</filename>
+	<path>/my-project-name/400249_CAOGX_8990_003_073_0000_Light2.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>235</width>
+		<height>235</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Gucci</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>18</xmin>
+			<ymin>102</ymin>
+			<xmax>184</xmax>
+			<ymax>220</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>eed-gold-tone-metal-packshot-artistique-vue1-as3639b09441nk340-8857835044894.jpg</filename>
+	<path>/my-project-name/eed-gold-tone-metal-packshot-artistique-vue1-as3639b09441nk340-8857835044894.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>428</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>68</xmin>
+			<ymin>167</ymin>
+			<xmax>367</xmax>
+			<ymax>395</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>247</xmin>
+			<ymin>185</ymin>
+			<xmax>291</xmax>
+			<ymax>359</ymax>
+		</bndbox>
+	</object>
+</annotation>

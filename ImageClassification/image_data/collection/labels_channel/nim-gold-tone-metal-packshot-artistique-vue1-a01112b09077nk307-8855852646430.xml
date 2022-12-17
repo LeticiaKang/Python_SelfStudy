@@ -1,0 +1,37 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>nim-gold-tone-metal-packshot-artistique-vue1-a01112b09077nk307-8855852646430.jpg</filename>
+	<path>/my-project-name/nim-gold-tone-metal-packshot-artistique-vue1-a01112b09077nk307-8855852646430.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>150</width>
+		<height>175</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>71</xmin>
+			<ymin>94</ymin>
+			<xmax>86</xmax>
+			<ymax>108</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>channel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>18</xmin>
+			<ymin>55</ymin>
+			<xmax>129</xmax>
+			<ymax>127</ymax>
+		</bndbox>
+	</object>
+</annotation>
