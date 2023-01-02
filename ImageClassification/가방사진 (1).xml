@@ -1,0 +1,38 @@
+<annotation>
+  <folder>C:\Self_Study\백업\가방사진\channel_test</folder>
+  <filename>가방사진 (1).jpg</filename>
+  <path>C:\Self_Study\백업\가방사진\channel_test</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>800</width>
+    <height>800</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>CHANNEL</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>146</xmin>
+      <ymin>333</ymin>
+      <xmax>690</xmax>
+      <ymax>748</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>CHANNEL</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>342</xmin>
+      <ymin>533</ymin>
+      <xmax>449</xmax>
+      <ymax>622</ymax>
+    </bndbox>
+  </object>
+</annotation>
